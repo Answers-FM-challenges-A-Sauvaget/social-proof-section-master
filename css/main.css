@@ -110,6 +110,14 @@ body {
   background-color: var(--lightGrayishMagenta);
 }
 
+#irene {
+  margin-top: 25px;
+}
+
+#anne {
+  margin-top: 50px;
+}
+
 .article--header {
   display: flex;
   align-items: center;
