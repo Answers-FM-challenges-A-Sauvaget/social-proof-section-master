@@ -6,16 +6,195 @@
 
   --darkGrayishMagenta: hsl(303, 10%, 53%);
   --lightGrayishMagenta: hsl(300, 24%, 96%);
-  --White: hsl(0, 0%, 100%);
+  --white: hsl(0, 0%, 100%);
 }
 
+/* === RESET DEFAULT STYLE === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  display: inline-block;
+}
+
+/* === LAYOUT === */
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 0.9375rem; /* = 15px */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: [first] 50% [line1] 50% [end];
+  grid-template-rows: [row1-start] 47.5% [row1-end] 47.5% [third-line] auto [last-line];
+  grid-template-areas:
+    'header aside'
+    'main main'
+    'footer footer';
+  row-gap: 4rem;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  padding: 4rem;
+  width: 80%;
+  grid-column: 1 / span 1;
+  grid-row: row1-start / row1-end;
+}
+
+.aside {
+  padding: 4rem;
+  grid-column: 2 / span 1;
+  grid-row: row1-start / row1-end;
+}
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  grid-column: 1 / span 2;
+  grid-row: row1-end / span 2;
+}
+
+.footer {
+  grid-column: 1 / span 2;
+  grid-row: third-line / span 2;
+}
+/* === BLOCKS === */
+.article {
+  background-color: var(--primary);
+  border-radius: 10px;
+  margin: 0 1rem;
+  padding: 2rem;
+}
+
+.articles--container {
+  display: flex;
+}
+/* === ELEMENTS === */
+.header--title {
+  color: var(--primary);
+  font-size: 3rem;
+}
+
+.header--text {
+  color: var(--primary);
+  padding-top: 2rem;
+}
+
+.aside--rating {
+  border-radius: 25px;
+  width: 80%;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+}
+
+#guru {
+  margin-left: 87px;
+}
+
+#bestTech {
+  margin-left: 174px;
+}
+
+.aside--span {
+  color: var(--primary);
+  font-weight: 700;
+}
+.aside--rating {
+  background-color: var(--lightGrayishMagenta);
+}
+
+.article--header {
+  display: flex;
+  align-items: center;
+}
+.article--img {
+  border-radius: 50%;
+}
+
+.article--userInfo {
+  margin-left: 1rem;
+}
+
+.article--title {
+  color: var(--white);
+}
+
+.article--subtitle {
+  color: var(--secondary);
+}
+
+.article--text {
+  color: var(--lightGrayishMagenta);
+  margin-top: 1rem;
+}
+.article--text::before {
+  content: '"';
+}
+
+.article--text::after {
+  content: '"';
+}
+/* === FRONTEND MENTOR === */
 .attribution {
   width: 100%;
   font-size: 11px;
-  text-align: center;
-  position: fixed;
-  bottom: 5px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* === MOBILE === */
+@media screen and (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header {
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .header--title {
+    font-size: 2rem;
+  }
+
+  #guru {
+    margin-left: 0;
+  }
+
+  #bestTech {
+    margin-left: 0;
+  }
+
+  .articles--container {
+    flex-direction: column;
+  }
+
+  .article {
+    margin-bottom: 1rem;
+  }
+
+  .aside {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .aside--rating {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .aside--span {
+    margin-top: 1rem;
+    display: block;
+  }
 }

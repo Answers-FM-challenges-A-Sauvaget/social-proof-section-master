@@ -19,27 +19,150 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <h1>10,000+ of our users love our products.</h1>
-    We only provide great products combined with excellent customer service. See
-    what our satisfied customers are saying about our services. Rated 5 Stars in
-    Reviews Rated 5 Stars in Report Guru Rated 5 Stars in BestTech Colton Smith
-    Verified Buyer "We needed the same printed design as the one we had ordered
-    a week prior. Not only did they find the original order, but we also
-    received it in time. Excellent!" Irene Roberts Verified Buyer "Customer
-    service is always excellent and very quick turn around. Completely delighted
-    with the simplicity of the purchase and the speed of delivery." Anne Wallace
-    Verified Buyer "Put an order with this company and can only praise them for
-    the very high standard. Will definitely use them again and recommend them to
-    everyone!"
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a href="https://www.frontendmentor.io/profile/a-sauvaget"
-        >Alexandre Sauvaget</a
-      >.
+    <div class="container">
+      <header class="header">
+        <h1 class="header--title">10,000+ of our users love our products.</h1>
+        <p class="header--text">
+          We only provide great products combined with excellent customer
+          service. See what our satisfied customers are saying about our
+          services.
+        </p>
+      </header>
+      <aside class="aside">
+        <div class="aside--rating" id="reviews">
+          <ul class="aside--list">
+            <li class="aside--listItem">
+              <img class="aside--img" src="./images/icon-star.svg" />
+            </li>
+            <li class="aside--listItem">
+              <img class="aside--img" src="./images/icon-star.svg" />
+            </li>
+            <li class="aside--listItem">
+              <img class="aside--img" src="./images/icon-star.svg" />
+            </li>
+            <li class="aside--listItem">
+              <img class="aside--img" src="./images/icon-star.svg" />
+            </li>
+            <li class="aside--listItem">
+              <img class="aside--img" src="./images/icon-star.svg" />
+            </li>
+          </ul>
+          <span class="aside--span">Rated 5 Stars in Reviews</span>
+        </div>
+        <div class="aside--rating" id="guru">
+          <ul class="aside--list">
+            <li class="aside--listItem">
+              <img class="aside--img" src="./images/icon-star.svg" />
+            </li>
+            <li class="aside--listItem">
+              <img class="aside--img" src="./images/icon-star.svg" />
+            </li>
+            <li class="aside--listItem">
+              <img class="aside--img" src="./images/icon-star.svg" />
+            </li>
+            <li class="aside--listItem">
+              <img class="aside--img" src="./images/icon-star.svg" />
+            </li>
+            <li class="aside--listItem">
+              <img class="aside--img" src="./images/icon-star.svg" />
+            </li>
+          </ul>
+          <span class="aside--span">Rated 5 Stars in Report Guru</span>
+        </div>
+        <div class="aside--rating" id="bestTech">
+          <ul class="aside--list">
+            <li class="aside--listItem">
+              <img class="aside--img" src="./images/icon-star.svg" />
+            </li>
+            <li class="aside--listItem">
+              <img class="aside--img" src="./images/icon-star.svg" />
+            </li>
+            <li class="aside--listItem">
+              <img class="aside--img" src="./images/icon-star.svg" />
+            </li>
+            <li class="aside--listItem">
+              <img class="aside--img" src="./images/icon-star.svg" />
+            </li>
+            <li class="aside--listItem">
+              <img class="aside--img" src="./images/icon-star.svg" />
+            </li>
+          </ul>
+          <span class="aside--span">Rated 5 Stars in BestTech</span>
+        </div>
+      </aside>
+      <main class="main">
+        <section class="articles--container">
+          <article class="article" id="colton">
+            <header class="article--header">
+              <img
+                class="article--img"
+                src="./images/image-colton.jpg"
+                alt="Colton"
+              />
+              <div class="article--userInfo">
+                <h2 class="article--title">Colton Smith</h2>
+                <h3 class="article--subtitle">Verified Buyer</h3>
+              </div>
+            </header>
+            <main class="article--main">
+              <p class="article--text">
+                We needed the same printed design as the one we had ordered a
+                week prior. Not only did they find the original order, but we
+                also received it in time. Excellent!
+              </p>
+            </main>
+          </article>
+          <article class="article" id="irene">
+            <header class="article--header">
+              <img
+                class="article--img"
+                src="./images/image-irene.jpg"
+                alt="Colton"
+              />
+              <div class="article--userInfo">
+                <h2 class="article--title">Irene Roberts</h2>
+                <h3 class="article--subtitle">Verified Buyer</h3>
+              </div>
+            </header>
+            <main class="article--main">
+              <p class="article--text">
+                Customer service is always excellent and very quick turn around.
+                Completely delighted with the simplicity of the purchase and the
+                speed of delivery.
+              </p>
+            </main>
+          </article>
+          <article class="article" id="anne">
+            <header class="article--header">
+              <img
+                class="article--img"
+                src="./images/image-anne.jpg"
+                alt="Colton"
+              />
+              <div class="article--userInfo">
+                <h2 class="article--title">Anne Wallace</h2>
+                <h3 class="article--subtitle">Verified Buyer</h3>
+              </div>
+            </header>
+            <main class="article--main">
+              <p class="article--text">
+                Put an order with this company and can only praise them for the
+                very high standard. Will definitely use them again and recommend
+                them to everyone!
+              </p>
+            </main>
+          </article>
+        </section>
+      </main>
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/a-sauvaget"
+          >Alexandre Sauvaget</a
+        >.
+      </footer>
     </div>
   </body>
 </html>
