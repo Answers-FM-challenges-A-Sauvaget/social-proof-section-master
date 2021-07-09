@@ -22,12 +22,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](images/desktop.png)
 
 ### Links
 
 - Solution URL: https://github.com/a-sauvaget/social-proof-section-master
-- Live Site URL:
+- Live Site URL: https://a-sauvaget.github.io/social-proof-section-master/
 
 ## My process
 
