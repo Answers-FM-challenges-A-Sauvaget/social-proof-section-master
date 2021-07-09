@@ -1,0 +1,21 @@
+/* === VARS === */
+:root {
+  /* COLORS */
+  --primary: hsl(300, 43%, 22%);
+  --secondary: hsl(333, 80%, 67%);
+
+  --darkGrayishMagenta: hsl(303, 10%, 53%);
+  --lightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.attribution {
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 5px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
